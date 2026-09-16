@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #0b1020 0%, #161b2f 100%);
+  color: #f5f7ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.game-shell {
+  width: min(96vw, 1000px);
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(10, 17, 31, 0.8);
+  border: 2px solid rgba(110, 175, 255, 0.5);
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.hud h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2.4rem);
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: #dfe9ff;
+  font-weight: bold;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #79d7ff 0%, #d6f7ff 35%, #e6ffe2 100%);
+  border: 2px solid rgba(110, 175, 255, 0.5);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.85rem;
+  color: #dfe9ff;
+  font-size: 0.95rem;
+}
+
+.controls p {
+  margin: 0;
+  padding: 0.3rem 0.7rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
